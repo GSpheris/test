@@ -5,9 +5,11 @@ var app = express();
 // 	response.send("Hello!");
 // });
 
-app.use(express.static("./"));
+// app.get('/sendhelp', (request, response) => {
+// 	console.log("Button clicked!");
+// });
 
-// app.use(express.static("assets"));
+app.use(express.static("./"));
 
 app.listen(3000, () => {
 	console.log("Listening on port 3000.");
